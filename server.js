@@ -131,6 +131,6 @@ function createLead(body,res){
 }
 
 
-server.listen(3000);
+server.listen(process.env.PORT);
 // Start the app by listening on the default Heroku port
 //app.listen(process.env.PORT || 3000);
