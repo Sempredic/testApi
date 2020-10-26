@@ -1,0 +1,31 @@
+{
+    "name": "Small Sharp Tool",
+    "description": "This app does one little thing, and does it well.",
+    "keywords": [
+      "NodeJS"
+    ],
+    "scripts": {
+      "start": "node server.js"
+    },
+    "env": {
+      "CLIENT_ID": {
+        "description": "A secret key for verifying the integrity of signed cookies.",
+        "value":"88488FC09BF06372974FDA7EEEE516379F3E33B36CFDD17FB43CAE77E119795F"
+      },
+      "CLIENT_SECRET": {
+        "description": "The number of processes to run.",
+        "value": "3MVG9JEx.BE6yifPEjtibNQo1g7elVUyr_0snztUjgPiGLncLGch_X7Fw3F2GZZK._8SFVXeMRquAMMohb9FR"
+      },
+      "REDIRECT_URL": {
+        "description": "The number of processes to run.",
+        "value": "http://localhost:3000/api/callback"
+      }
+    },
+    "environments": {
+      "test": {
+        "scripts": {
+          "test": "node server.js"
+        }
+      }
+    }
+  }
