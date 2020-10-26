@@ -93,6 +93,7 @@ function createLead(body,res){
             conn.oauth2.refreshToken(conn.refreshToken, (err, results) => {
               if (err) return reject(err);
               resolve(results);
+	      console.log(results);
             }).then(()=>{
               conn.apex.post("/Methods/testObject", body, function(err, result){
                     if(err){
@@ -101,7 +102,7 @@ function createLead(body,res){
                         if(res!=null){
                           console.log('getit');
 
-                          res.json({leads:result});
+                          res.json({products:result});
                         }else{
                           console.log('Nope');
                           return new Promise((resolve)=>{
@@ -118,7 +119,7 @@ function createLead(body,res){
         if(res!=null){
           console.log('getit');
 
-          res.json({leads:result});
+          res.json({products:result});
         }else{
           console.log('Yup');
           return new Promise((resolve)=>{
