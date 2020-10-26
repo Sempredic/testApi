@@ -26,7 +26,9 @@ app.use(bodyParser.urlencoded({
 
 
 app.post('/api/initialize', function(req,res) {
-
+    console.log("CLEIENTID: " + clientId);
+    console.log("CLEIENTID: " + clientSecret);
+    console.log(redirectUrl);
     oauth2 = new jsforce.OAuth2({
       // you can change loginUrl to connect to sandbox or prerelease env.
       loginUrl : 'https://login.salesforce.com',
@@ -36,7 +38,7 @@ app.post('/api/initialize', function(req,res) {
     });
     //
 
-    console.log(redirectUrl);
+    
     // Get authorization url and redirect to it.
     //
     res.redirect(oauth2.getAuthorizationUrl({ scope : 'api refresh_token' }));

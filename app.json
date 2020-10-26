@@ -18,7 +18,11 @@
       },
       "REDIRECT_URL": {
         "description": "The number of processes to run.",
-        "value": "http://localhost:3000/api/callback"
+        "value": "https://a23f23dgasdfae4.herokuapp.com/api/callback"
+      },
+      "URL": {
+        "description": "The number of processes to run.",
+        "value": "https://empathetic-badger-r9tygo-dev-ed.my.salesforce.com"
       }
     },
     "environments": {
